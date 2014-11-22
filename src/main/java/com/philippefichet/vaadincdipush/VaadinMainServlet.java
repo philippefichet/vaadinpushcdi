@@ -6,6 +6,7 @@
 package com.philippefichet.vaadincdipush;
 
 import com.vaadin.annotations.VaadinServletConfiguration;
+import com.vaadin.cdi.server.VaadinCDIServlet;
 import com.vaadin.server.VaadinServlet;
 import javax.servlet.annotation.WebInitParam;
 import javax.servlet.annotation.WebServlet;
@@ -14,10 +15,8 @@ import javax.servlet.annotation.WebServlet;
  *
  * @author philippe
  */
-@WebServlet(urlPatterns = {"/*"}, initParams = {
-    @WebInitParam(name = "UIProvider", value = "com.vaadin.cdi.CDIUIProvider")
-}, asyncSupported = true, loadOnStartup = 1)
+@WebServlet(urlPatterns = {"/*"}, asyncSupported = true, loadOnStartup = 1)
 @VaadinServletConfiguration(ui = com.philippefichet.vaadincdipush.ui.MainUI.class, productionMode = true)
-public class VaadinMainServlet extends VaadinServlet {
+public class VaadinMainServlet extends VaadinCDIServlet {
     
 }

@@ -28,7 +28,7 @@ import javax.inject.Inject;
  *
  * @author glopinous
  */
-@CDIUI()
+@CDIUI("")
 @Theme(value = "valo")
 @Push()
 public class MainUI extends UI {

@@ -57,9 +57,16 @@
         <dependency>
             <groupId>com.vaadin</groupId>
             <artifactId>vaadin-cdi</artifactId>
-            <version>1.0.0.alpha2</version>
+            <version>1.0.0.rc1</version>
         </dependency>
     </dependencies>
+    
+    <repositories>
+        <repository>
+            <id>vaadin-addons</id>
+            <url>http://maven.vaadin.com/vaadin-addons</url>
+        </repository>
+    </repositories>
 
     <build>
         <plugins>
