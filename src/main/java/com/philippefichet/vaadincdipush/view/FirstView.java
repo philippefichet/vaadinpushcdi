@@ -16,7 +16,7 @@ import javax.annotation.PostConstruct;
  *
  * @author glopinous
  */
-@CDIView()
+@CDIView("")
 public class FirstView extends VerticalLayout implements View{
 
     @PostConstruct
