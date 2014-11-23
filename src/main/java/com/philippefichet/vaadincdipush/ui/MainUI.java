@@ -40,7 +40,5 @@ public class MainUI extends UI {
 
         Navigator navigator = new Navigator(this, this);
         navigator.addProvider(viewProvider);
-        navigator.addView("", FirstView.class);
-        navigator.addView("second", SecondView.class);
     }
 }
