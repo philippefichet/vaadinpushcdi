@@ -1,4 +1,4 @@
 vaadinpushcdi
 =============
 
-Simple exemple with Vaadin/Push and CDI
+Simple example with Vaadin/Push and CDI
